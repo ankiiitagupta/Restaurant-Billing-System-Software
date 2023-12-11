@@ -202,13 +202,13 @@ int every()
 
 int main()
 {      int h;
-       char *username, *password ;
+       char username[20], password[10] ;
        printf("\n\n\n\t\t\t\tEnter the Username: ");
        scanf("%s",&username);
-       if(strcpy(username,"user")==0){
-              printf("\t\t\t\t Enter password:\t");
+       if(strcmp(username,"user")==0){
+              printf("\t\t\t\t Enter password: ");
               scanf("%s",&password);
-              if(strcpy(password,"pass")==0)
+              if(strcmp(password,"pass")==0)
              { printf("\n\n\t\tLogin Successful!!!");
              system("\ncls");
                every();
